@@ -1,9 +1,9 @@
 
 /* 
 
-    Israk Ahmed
-    israkahmed7@gmail.com
-    University of Rajshahi
+    Name        :   Israk Ahmed
+    E-Mail      :   israkahmed7@gmail.com
+    Institution :   University of Rajshahi
 
 */
 
