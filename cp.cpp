@@ -1,5 +1,11 @@
 
-/* Israk Ahmed */
+/* 
+
+    Israk Ahmed
+    israkahmed7@gmail.com
+    University of Rajshahi
+
+*/
 
 #include <bits/stdc++.h>
 
