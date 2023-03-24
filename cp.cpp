@@ -1,8 +1,9 @@
 
-/* 
+/*
 
     Name        :   Israk Ahmed
     E-Mail      :   israkahmed7@gmail.com
+    Github      :   github.com/IsrakAhmed
     Institution :   University of Rajshahi
 
 */
@@ -12,11 +13,16 @@
 using namespace std;
 
 #define ll long long
-#define asort (v).begin(),(v).end()        // Ascending Order Sort
-#define dsort (v).rbegin(),(v).rend()     // Descending Order Sort
+#define asort(v) sort((v).begin(),(v).end())        // Ascending Order Sort
+#define dsort(v) sort((v).rbegin(),(v).rend())     // Descending Order Sort
 #define pb push_back
-#define sumv v.begin(), v.end(), 0
+#define sum(v) accumulate(v.begin(), v.end(), 0)
 #define gcd __gcd
+#define toLower(s) transform((s).begin(),(s).end(),(s).begin(),::tolower)       //toLower(s);
+#define toUpper(s) transform((s).begin(),(s).end(),(s).begin(),::toupper)       //toUpper(s);
+#define rmvChar(s,c) (s).erase(remove((s).begin(), (s).end(), c), (s).end())    //remove specific character from string
+#define rmvDuplicates(x) (x).erase(unique((x).begin(), (x).end()), (x).end());  //works only for sorted string
+#define all(x) (x).begin(),(x).end()
 
 ll random(ll low, ll high) {
     // Generate random number
@@ -24,7 +30,12 @@ ll random(ll low, ll high) {
 }
 
 void solution(){
+    ll t;
+    cin >> t;
 
+    while(t--){
+
+    }
 }
 
 int main(){
