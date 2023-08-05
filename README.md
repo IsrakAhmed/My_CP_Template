@@ -1,3 +1,3 @@
 # My CP Template
 
->> I'll update this template gradually.
+> I'll update this template gradually.
