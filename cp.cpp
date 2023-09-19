@@ -23,7 +23,7 @@ using namespace std;
 #define rmvChar(s,c) (s).erase(remove((s).begin(), (s).end(), c), (s).end())    //remove specific character from string
 #define rmvDuplicates(x) (x).erase(unique((x).begin(), (x).end()), (x).end());  //works only for sorted string
 #define all(x) (x).begin(),(x).end()
-#define nl "\n"
+#define endl "\n"
 
 ll random(ll low, ll high)
 {
