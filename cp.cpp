@@ -31,6 +31,13 @@ ll random(ll low, ll high)
     return rand() % (high - low + 1) + low;
 }
 
+unsigned long long factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
 void solution()
 {
     ll t;
