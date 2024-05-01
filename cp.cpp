@@ -4,6 +4,7 @@
     Name        :   Israk Ahmed
     E-Mail      :   israkahmed7@gmail.com
     Github      :   github.com/IsrakAhmed
+    LinkedIn    :   linkedin.com/in/israkahmed
     Institution :   University of Rajshahi
 
 */
@@ -25,6 +26,9 @@ using namespace std;
 #define all(x) (x).begin(),(x).end()
 #define endl "\n"
 #define merge(v1,v2,m) merge(v1.begin(), v1.end(), v2.begin(), v2.end(),m.begin());     //  merge two vectors
+#define reverseS(s) reverse(s.begin(), s.end())     //  reverse the string
+#define nSum(n) (n * (n + 1)) / 2                   //  sum of first N positive integers
+#define nmSum(n,m) ((n + m) * (m - n + 1)) / 2      //  sum of positive integers from N to M (N <= M)
 
 ll random(ll low, ll high)
 {
@@ -37,6 +41,34 @@ unsigned long long factorial(unsigned long long n) {
         return 1;
     }
     return n * factorial(n - 1);
+}
+
+vector<int> allPrimes(int n) {
+
+    // find all prime numbers (max limit n)
+
+    // sieve_of_eratosthenes
+
+    vector<bool> sieve(n+1, true); // Initialize all numbers as potential primes
+    vector<int> primes;
+
+    for (int p = 2; p * p <= n; ++p) {
+        if (sieve[p]) {
+            // p is prime, mark its multiples as composite
+            for (int i = p * p; i <= n; i += p) {
+                sieve[i] = false;
+            }
+        }
+    }
+
+    // Collect primes
+    for (int p = 2; p <= n; ++p) {
+        if (sieve[p]) {
+            primes.push_back(p);
+        }
+    }
+
+    return primes;
 }
 
 void solution()
