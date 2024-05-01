@@ -13,17 +13,18 @@
 using namespace std;
 
 #define ll long long
-#define asort(v) sort((v).begin(),(v).end())        // Ascending Order Sort
-#define dsort(v) sort((v).rbegin(),(v).rend())     // Descending Order Sort
+#define asort(v) sort((v).begin(),(v).end())        //  Ascending Order Sort
+#define dsort(v) sort((v).rbegin(),(v).rend())     //   Descending Order Sort
 #define pb push_back
 #define sum(v) accumulate(v.begin(), v.end(), 0)
 #define gcd __gcd
-#define toLower(s) transform((s).begin(),(s).end(),(s).begin(),::tolower)       //toLower(s);
-#define toUpper(s) transform((s).begin(),(s).end(),(s).begin(),::toupper)       //toUpper(s);
-#define rmvChar(s,c) (s).erase(remove((s).begin(), (s).end(), c), (s).end())    //remove specific character from string
-#define rmvDuplicates(x) (x).erase(unique((x).begin(), (x).end()), (x).end());  //works only for sorted string
+#define toLower(s) transform((s).begin(),(s).end(),(s).begin(),::tolower)       //  toLower(s);
+#define toUpper(s) transform((s).begin(),(s).end(),(s).begin(),::toupper)       //  toUpper(s);
+#define rmvChar(s,c) (s).erase(remove((s).begin(), (s).end(), c), (s).end())    //  remove specific character from string
+#define rmvDuplicates(x) (x).erase(unique((x).begin(), (x).end()), (x).end());  //  works only for sorted string or vector
 #define all(x) (x).begin(),(x).end()
 #define endl "\n"
+#define merge(v1,v2,m) merge(v1.begin(), v1.end(), v2.begin(), v2.end(),m.begin());     //  merge two vectors
 
 ll random(ll low, ll high)
 {
@@ -31,7 +32,7 @@ ll random(ll low, ll high)
     return rand() % (high - low + 1) + low;
 }
 
-unsigned long long factorial(int n) {
+unsigned long long factorial(unsigned long long n) {
     if (n == 0 || n == 1) {
         return 1;
     }
