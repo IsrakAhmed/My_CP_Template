@@ -18,6 +18,8 @@ using namespace std;
 #define dsort(v) sort((v).rbegin(),(v).rend())     //   Descending Order Sort
 #define pb push_back
 #define sum(v) accumulate(v.begin(), v.end(), 0)
+#define rotates(v,i) rotate(v.begin(), v.begin() + i, v.end())       //  moves first i items to last
+#define isSorted(v) is_sorted(v.begin(), v.end())                    //  checks if the vector is sorted or not
 #define gcd __gcd
 #define toLower(s) transform((s).begin(),(s).end(),(s).begin(),::tolower)       //  toLower(s);
 #define toUpper(s) transform((s).begin(),(s).end(),(s).begin(),::toupper)       //  toUpper(s);
