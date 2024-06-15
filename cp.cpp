@@ -1,3 +1,9 @@
+/*
+
+            Bismillah Hir Rehmanir Rahim
+            Allah knows best
+
+*/
 
 /*
 
@@ -14,9 +20,14 @@
 using namespace std;
 
 #define ll long long
+#define ld long double
+#define mod 1000000007
+#define pi 3.141592653589793
+#define f(i, a, n) for (ll i = a; i < n; i++)
 #define asort(v) sort((v).begin(),(v).end())        //  Ascending Order Sort
 #define dsort(v) sort((v).rbegin(),(v).rend())     //   Descending Order Sort
 #define pb push_back
+#define mp make_pair
 #define sum(v) accumulate(v.begin(), v.end(), 0)
 #define rotates(v,i) rotate(v.begin(), v.begin() + i, v.end())       //  moves first i items to last
 #define isSorted(v) is_sorted(v.begin(), v.end())                    //  checks if the vector is sorted or not
@@ -32,20 +43,26 @@ using namespace std;
 #define nSum(n) (n * (n + 1)) / 2                   //  sum of first N positive integers
 #define nmSum(n,m) ((n + m) * (m - n + 1)) / 2      //  sum of positive integers from N to M (N <= M)
 
+const int dx[] = {0, -1, 0, 1, -1, -1, 1, 1};
+const int dy[] = {1, 0, -1, 0, 1, -1, -1, 1};
+
 ll random(ll low, ll high)
 {
     // Generate random number
     return rand() % (high - low + 1) + low;
 }
 
-unsigned long long factorial(unsigned long long n) {
-    if (n == 0 || n == 1) {
+unsigned long long factorial(unsigned long long n)
+{
+    if (n == 0 || n == 1)
+    {
         return 1;
     }
     return n * factorial(n - 1);
 }
 
-vector<int> allPrimes(int n) {
+vector<int> allPrimes(int n)
+{
 
     // find all prime numbers (max limit n)
 
@@ -54,24 +71,49 @@ vector<int> allPrimes(int n) {
     vector<bool> sieve(n+1, true); // Initialize all numbers as potential primes
     vector<int> primes;
 
-    for (int p = 2; p * p <= n; ++p) {
-        if (sieve[p]) {
+    for (int p = 2; p * p <= n; ++p)
+    {
+        if (sieve[p])
+        {
             // p is prime, mark its multiples as composite
-            for (int i = p * p; i <= n; i += p) {
+            for (int i = p * p; i <= n; i += p)
+            {
                 sieve[i] = false;
             }
         }
     }
 
     // Collect primes
-    for (int p = 2; p <= n; ++p) {
-        if (sieve[p]) {
+    for (int p = 2; p <= n; ++p)
+    {
+        if (sieve[p])
+        {
             primes.push_back(p);
         }
     }
 
     return primes;
 }
+
+ll finds(vector <ll> v, ll target)
+{
+
+    vector <ll>::iterator i;
+
+    i = find(v.begin(), v.end(), target);
+
+    if (i != v.end())
+    {
+        //return (i - v.begin()) + 1;   // returns position
+
+        return 1;   // returns 1 as true
+    }
+
+    //return -1;  // returns position as not  found
+
+    return 0;   // returns 0 as false
+}
+
 
 void solution()
 {
@@ -83,6 +125,7 @@ void solution()
 
     }
 }
+
 
 int main()
 {
